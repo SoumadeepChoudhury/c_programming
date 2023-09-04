@@ -19,13 +19,12 @@ int main(){
     scanf("%d",&arr[i]);
   }
   for(int i=0;i<n-1;i++){
-    int largest=0;
+    int largest=1;
     for(int j=0;j<i;j++){
       if(arr[i]<arr[j]){
         largest=0;
         break;
       }
-      else largest=1;
     }
     if(largest==1){
       if(arr[i]<=arr[i+1]) largest=0;
